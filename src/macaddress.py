@@ -8,7 +8,7 @@ api_key = "at_ymgTVBIb5rgbbsTPFzq2gr7RiMFyJ"
 url = f"https://api.macaddress.io/v1?apiKey={api_key}&output=json&search={mac_address}"
 response = requests.get(url)
 
-# Extract company name from API response
+# Extract company name, Company address, cpuntry code from API response
 if response.status_code != 200:
     print(f"Failed to retrieve information for MAC address {mac_address}")
     sys.exit(1)
